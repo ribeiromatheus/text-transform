@@ -16,10 +16,6 @@ function toUpper() {
     return displayText(txaText.value.toUpperCase());
 }
 
-function toUpperLower() {
-    
-}
-
 function displayText(text) {
     return txaNewText.value = text;
 }
