@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Stuffs Generator</title>
 </head>
 <body>
-    <div id="container">
-        <section>
-            <h3>Stuffs Generator</h3>
-            <textarea id="txaText" class="txa" cols="30" rows="10" placeholder="Type your text here"></textarea>
-            <button id="btnUpper" class="btn">uppercase</button>
-            <button id="btnLower" class="btn">lowercase</button>
-            <button id="btnUpperLower" class="btn">UPPER-lower</button>
-            <textarea id="txaNewText" class="txa" cols="30" rows="10" placeholder="Your new text" readonly></textarea>
-        </section>        
+    <div class="container">
+        <h3 class="text-center">text transform</h3>
+        <textarea id="txaText" class="txa" cols="30" rows="10" placeholder="Type your text here"></textarea>
+        <button id="btnUpper" class="btn btn-primary">uppercase</button>
+        <button id="btnLower" class="btn btn-primary">lowercase</button>
+        <button id="btnUpperLower" class="btn btn-primary">UPPER-lower</button>
+        <textarea id="txaNewText" class="txa form-control" cols="30" rows="10" placeholder="Your new text" readonly></textarea>       
     </div>
     <script src="js/script.js"></script>
 </body>
