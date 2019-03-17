@@ -16,3 +16,8 @@ body {
 #btnLower { text-transform: lowercase; }
 
 h3, #btnUpper { text-transform: uppercase; }
+
+#copy { 
+    position: absolute;
+    cursor: pointer;
+}

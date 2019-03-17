@@ -2,11 +2,13 @@ var txaText = document.getElementById('txaText'),
     txaNewText = document.getElementById('txaNewText'),
     btnUpper = document.getElementById('btnUpper'),
     btnLower = document.getElementById('btnLower'),
-    btnUpperLower = document.getElementById('btnUpperLower');
+    btnUpperLower = document.getElementById('btnUpperLower'),
+    copy = document.getElementById('copy');
 
 btnLower.addEventListener('click', toLower);
 btnUpper.addEventListener('click', toUpper);
 btnUpperLower.addEventListener('click', toUpperLower);
+copy.addEventListener('click', copyText);
 
 function toLower() {
     return displayText(txaText.value.toLowerCase());
@@ -30,4 +32,15 @@ function toUpperLower() {
 
 function displayText(text) {
     return txaNewText.value = text;
+}
+
+function copyText() {
+    // Get the text field
+    let copyTxt = txaNewText;
+
+    // Select the text field
+    copyTxt.select();
+
+    // Copy the text inside the text field
+    document.execCommand('copy');
 }
