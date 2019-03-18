@@ -19,12 +19,12 @@ function toUpper() {
 }
 
 function toUpperLower() {
-    let text = txaText.value, i = 0, ans = "";
+    let text = txaText.value, countLetter = 0, ans = '';
 
-    while (i < text.length) {
-        if (i % 2 == 0) ans += text[i].toUpperCase();
-        else ans += text[i].toLocaleLowerCase();
-        i++;
+    while (countLetter < text.length) {
+        if (countLetter % 2 == 0) ans += text[countLetter].toUpperCase();
+        else ans += text[countLetter].toLocaleLowerCase();
+        countLetter++;
     }
 
     return displayText(ans);
